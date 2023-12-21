@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    height: 100vh;
+    width: 100%;
+    background: #dce0e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.phone-frame-im {
+    position: relative;
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
+    max-width: 375px;
+    background: #3d3d4a;
+    padding: 18px 15px;
+    border-radius: 46px;
+}
+
+.turnOnOf-btn {
+    position: absolute;
+    right: -5px;
+    top: 120px;
+    width: 5px;
+    height: 70px;
+    background: #8989a7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.turnOnOf-btn:hover {
+    opacity: 0.5;
+}
+
+.turnOnOf-btn:active {
+    width: 4px;
+    margin-right: 1px;
+}
+
+.volume-btn {
+    position: absolute;
+    left: -5px;
+    top: 90px;
+    display: grid;
+    gap: 10px;
+}
+
+.volume-btn .btn {
+    width: 5px;
+    height: 50px;
+    background: #8989a7;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+.volume-btn .btn:hover {
+    opacity: 0.5;
+}
+
+.volume-btn .btn:active {
+    width: 4px;
+    margin-left: 1px;
+}
+
+.phone-display {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.top-details {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 140px;
+    height: 26px;
+    background: #3d3d4a;
+    margin: 0 auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.speF {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 40px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.camF {
+    margin-top: 3.5px;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.camF:hover {
+    transform: scale(1.2);
+    background: #eee;
+}
+
+.camF:active {
+    transform: scale(1);
+}
+
+.text-one-line {
+    font-weight: 400;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
